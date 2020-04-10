@@ -23,6 +23,7 @@
     crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <link rel="icon" href="fluentiza-logo.png" type="image/gif">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <style>
     body {
       font: 20px Montserrat, sans-serif;
@@ -162,8 +163,6 @@
       max-width: 1150px;
       margin: 0 auto;
     }
-
-  
   </style>
   <!-- <meta http-equiv="refresh" content="3.5"> -->
 </head>
@@ -242,11 +241,11 @@
         <h2 class="margin">Beneficios</h2>
         </p>
         <ul class="text-left">
-          <li>Curso 100% online</li>
-          <li>Plataforma propria.</li>
-          <li>Audios para treinar sua fala.</li>
-          <li>Aula ao vivo todo mês.</li>
-          <li>Material complementar em PDF.</li>
+          <li style= "list-style-type: none"><i class="fa fa-check-circle"></i> Curso 100% online</li>
+          <li style= "list-style-type: none"><i class="fa fa-check-circle"></i> Plataforma propria.</li>
+          <li style= "list-style-type: none"><i class="fa fa-check-circle"></i> Audios para treinar sua fala.</li>
+          <li style= "list-style-type: none"><i class="fa fa-check-circle"></i> Aula ao vivo todo mês.</li>
+          <li style= "list-style-type: none"><i class="fa fa-check-circle"></i> Material complementar em PDF.</li>
         </ul>
       </div>
     </div>
@@ -265,9 +264,9 @@
 
       <div class="col mb-4">
         <ul class="text-left">
-          <li>Quer aprender inglês mas não tem muito tempo.</li>
-          <li>Para você que acha que aprender inglês é difícil.</li>
-          <li>Acredita não ter ninguém com quem praticar.</li>
+          <li style= "list-style-type: none"><i class="fa fa-check-circle"></i> Quer aprender inglês mas não tem muito tempo.</li>
+          <li style= "list-style-type: none"><i class="fa fa-check-circle"></i> Para você que acha que aprender inglês é difícil.</li>
+          <li style= "list-style-type: none"><i class="fa fa-check-circle"></i> Acredita não ter ninguém com quem praticar.</li>
         </ul>
       </div>
     </div>
@@ -301,21 +300,34 @@
     </div>
   </div>
 
+
+
   <!-- BONUS -->
   <div class="container-fluid bg-3 text-center ">
-    <h3 class="margin">Vamos dar a você + 3 bônus</h3>
-    <div class="row">
-      <div class="col-sm-4">
-        <h3> bonus!</h3><br>
-        <p>primeiro bonus</p>
+    <h3 class="margin">E mais 3 bônus para você...</h3>
+    <div class="card-deck">
+      <div class="card">
+        <div class="card-body">
+          <div class="card-header ">Bônus 1 <i class="fa fa-gift"></i></div>
+          <h5 class="card-title"><strong>OUTRO BONUS</strong></h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        </div>
       </div>
-      <div class="col-sm-4">
-        <h3> bonus!</h3><br>
-        <p>segundo bonus </p>
+      <div class="card">
+        <div class="card-body">
+          <div class="card-header ">Bônus 2 <i class="fa fa-gift"></i></div>
+          <h5 class="card-title"><strong>AULA AO VIVO</strong></h5>
+          <p class="card-text"> Todo mês será realizado duas aulas com toda a turma.</p>
+        </div>
       </div>
-      <div class="col-sm-4">
-        <h3> bonus!</h3><br>
-        <p>terceiro bonus</p>
+      <div class="card">
+        <div class="card-body">
+          <div class="card-header ">Bônus 3 <i class="fa fa-gift"></i></div>
+          <h5 class="card-title text-danger"><strong>LIMITADO!!!</strong></h5>
+          <p class="card-text ">1 hora de aula particular para os 10 primeiros alunos.</p>
+          <p class="card-text">Valor: <s>R$ 200</s></p>
+          <p class="card-text">GRÁTIS</s></p>
+        </div>
       </div>
     </div>
   </div>
@@ -334,10 +346,7 @@
 
   <!------  OFERTA  ------>
   <div class="container-fluid bg-2 text-center">
-    <h2 class="margin">Veja a super oferta que preprarei para você</h2>
-  
-
-  
+    <h2 class="margin">Veja essa super oferta que preprarei para você</h2>
 
     <div class="container">
       <div class="row">
@@ -380,13 +389,13 @@
   <!-- Second Container -->
   <div class="container-fluid bg-3 text-center">
     <h3 class="margin">Dúvidas frequentes</h3>
-    <button class="accordion">Como receberei meu curso?</button>
+    <button class="accordion plus">Como receberei meu curso?</button>
     <div class="panel">
       <p>Após a confirmação da compra você recebera um link para acesso a plataforma do curso.
       </p>
     </div>
 
-    <button class="accordion">E se eu não gostar o curso?</button>
+    <button class="accordion">E se eu não gostar o curso?<span>f</span></button>
     <div class="panel">
       <p>Após comprar o curso você tem até 30 dias para solicitar o reembolso
         basta enviar um email a nós que devolveremos 100% do seu dinheiro.
@@ -406,7 +415,13 @@
       </p>
     </div>
 
-  </div>
+  </div> 
+
+
+
+
+
+
 
 
   <!-- Footer -->
@@ -466,7 +481,7 @@
       });
     }
 
-  
+
 
     //countdown
     // Set the date we're counting down to
