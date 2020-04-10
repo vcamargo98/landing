@@ -35,25 +35,28 @@
     }
 
     .margin {
-      margin-bottom: 45px;
       font-size: 30px;
+      padding: 100px 0;
+      font-family: Helvetica, serif;
+      margin-bottom: 60px;
+      text-align: center;
+      font-weight: 700;
+      padding: 5px;
+
     }
 
     .bg-1 {
-      background-color: #1abc9c;
-      /* Green */
-      color: #ffffff;
+      background-color: #f6f5f6;
+      color: #000000;
     }
 
     .bg-2 {
-      background-color: black;
-      /* Dark Blue */
+      background-color: #000000;
       color: white;
     }
 
     .bg-3 {
       background-color: #ffffff;
-      /* White */
       color: black;
     }
 
@@ -61,8 +64,6 @@
       background-color: #007aff;
       color: white;
     }
-
-
 
     .container-fluid {
       padding-top: 70px;
@@ -82,13 +83,11 @@
       transition: 0.4s;
     }
 
-    /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
     .active,
     .accordion:hover {
       background-color: rgb(155, 153, 153);
     }
 
-    /* Style the accordion panel. Note: hidden by default */
     .panel {
       padding: 0 18px;
       background-color: white;
@@ -124,10 +123,28 @@
     p {
       margin: 0;
       padding-bottom: 20px;
+      padding: 7px;
+      font-size: 17px;
+      /* line-height:25px; */
+
+      text-align: justify;
     }
 
     .button {
-      background-color: #ec2323;
+      background-color: #61CE4B;
+      border: none;
+      color: white;
+      padding: 15px 16px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      border-radius: 12px;
+      margin-top: 30px;
+    }
+
+    .button2 {
+      background-color: rgb(136, 6, 6);
       border: none;
       color: white;
       padding: 15px 16px;
@@ -138,6 +155,15 @@
       width: 250px;
       border-radius: 12px;
     }
+
+    .video {
+      width: 100%;
+      height: 100%;
+      max-width: 1150px;
+      margin: 0 auto;
+    }
+
+  
   </style>
   <!-- <meta http-equiv="refresh" content="3.5"> -->
 </head>
@@ -145,167 +171,214 @@
 <body>
 
   <!-- Promessa + Video -->
-  <div class="container-fluid bg-3 text-center">
-    <img src="./logo_fluentiza.png" alt="logo" width="200px">
-    <h2 class="margin" style="color: black;">Aprenda Inglês totalmente online</h2>
-    <div class="embed-responsive embed-responsive-16by9">
-      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/8jdX9YldjYw" allowfullscreen></iframe>
-    </div>
-  </div>
-
-
-  <!-- Second Container -->
-  <div class="container-fluid bg-4 text-center">
-    <h2 class="margin">O que você vai aprender?</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat. </p>
-    <a href="#" class="btn btn-default btn-lg">
-
-    </a>
-  </div>
-
-  <!-- Third Container (Grid) -->
-  <div class="container-fluid bg-3 text-center">
-    <h3 class="margin">O que nosso curso pode fazer por você?</h3><br>
-    <div class="row">
-      <div class="col-sm-4">
-        <p>O aprendizado do inglês pode alavancar sua carreira.</p>
-      </div>
-      <div class="col-sm-4">
-        <p>Obter mais oportunidades de trabalho e sair na frente de todo mundo já que somente 5% da população brasileira
-          fala inglês.</p>
-        <!-- <img src="birds2.jpg" class="img-responsive margin" style="width:100%" alt="Image"> -->
-      </div>
-      <div class="col-sm-4">
-        <p>Assista filmes sem se preocupar com as legendas.</p>
-      </div>
-    </div>
-  </div>
-
-
-  <!-- Second Container -->
   <div class="container-fluid bg-2 text-center">
-    <h3 class="margin">Pra quem é o curso?</h3>
-    <p>Este curso foi preparado com uma metologia que pode fazer você sair do zero e ir ao nivel intermediario em poucos
+    <img src="./logo_transp.png" alt="logo" width="200px">
+    <h2 class="margin titulo">Descubra como ir do zero ao nível fluente<br> em inglês em apenas 8
       meses.
-      O curso foi pensado para você que quer falar inglês fluentemente e quer fazer isso sozinho e na sua casa sem
-      perder tempo se deslocando para uma escola.
-    </p>
-
-    </a>
+    </h2>
+    <div class="video">
+      <iframe src="https://www.youtube.com/embed/8jdX9YldjYw?&controls=0&showinfo=0" allowfullscreen></iframe>
+    </div>
+    <a href="#" class="btn btn-success btn-lg button" role="button" aria-pressed="true">Comprar agora</a>
   </div>
 
-
-   <!------ HISTORIA ------->
-   <div class="container-fluid bg-4 text-center">
-    <h3 class="margin">Quem é Tarcisio?</h3>
-
+  <!------ HISTORIA ------->
+  <div class="container-fluid bg-1 text-center">
     <div class="row">
       <div class="col-sm-4">
         <img src="./foto_tarsa.jpg" class="img-responsive img-circle margin" style="display:inline" alt="garantia"
           width="300" height="300">
       </div>
       <div class="col-sm-6">
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-          industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
-          electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
-          Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus
-          PageMaker including versions of Lorem Ipsum.
+        <h3>Quem é Tarcisio</h3>
+        <p>Hi there! How are you doing? Meu nome é Tarcisio e eu sou o criador da plataforma Fluentiza, a mais completa
+          para você estudar e alcançar a fluência no inglês.
+
+          Leciono aulas de inglês para adultos há 4 anos e comecei pois sempre fui apaixonado por essa língua. Há dois
+          anos começou a nascer dentro de mim um sonho de construir uma plataforma focada em estudos de inglês e que
+          fornecesse tudo que alguém precisasse para aprender esse idioma falado por mais de 1 bilhão e meio de pessoas
+          ao redor do mundo e que, querendo ou não, é a língua que você tem que aprender se quiser se comunicar com o
+          mundo.
         </p>
       </div>
 
     </div>
   </div>
 
-   
+  <!-- Beneficios -->
+  <div class="container-fluid bg-3 text-center">
+    <h3 class="margin">Por que aprender inglês?</h3><br>
+    <div class="row row-cols-1 row-cols-md-2">
+      <div class="col mb-4">
+        <img src="./noticia.png" class="img-responsive alt=" noticia oglobo" width="500px">
+      </div>
+      <div class="col mb-4">
+        <p>Hoje entre 209,3 milhões de pessoas somente 5% falam inglês e somente 1% falam fluentemente. O que torna
+          muito mais facil você ser bem reconhecido por falar um segundo idioma</p>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Conteudo do curso -->
+  <div class="container-fluid bg-1 text-center">
+    <h2 class="margin">Sobre o curso</h2>
+    <div class="row row-cols-1 row-cols-md-2">
+      <div class="col mb-4">
+
+        <p>São 10 modulos com total de 100 horas para fazer você do basico ao avançado.
+        </p>
+        <ol class="text-left">
+          <li>Verto to Be</li>
+          <li>Simple past.</li>
+          <li>Future present.</li>
+          <li>Treinar a escuta.</li>
+          <li>Falando melhor</li>
+          <li>Fluencia.</li>
+        </ol>
+      </div>
+
+      <div class="col mb-4">
+        <h2 class="margin">Beneficios</h2>
+        </p>
+        <ul class="text-left">
+          <li>Curso 100% online</li>
+          <li>Plataforma propria.</li>
+          <li>Audios para treinar sua fala.</li>
+          <li>Aula ao vivo todo mês.</li>
+          <li>Material complementar em PDF.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Quem deve fazer o curso -->
+  <div class="container-fluid bg-3 text-center">
+    <h3 class="margin">Pra quem é o curso?</h3>
+    <div class="row row-cols-1 row-cols-md-2">
+      <div class="col mb-4">
+        <p>Este curso é para você que está cansado de ficar abrindo o google tradutor
+          a todo momento para traduzir tudo,
+          cansado de tentar aprender inglês com outros cursos mas que sempre não levam a nada.</p>
+      </div>
+
+      <div class="col mb-4">
+        <ul class="text-left">
+          <li>Quer aprender inglês mas não tem muito tempo.</li>
+          <li>Para você que acha que aprender inglês é difícil.</li>
+          <li>Acredita não ter ninguém com quem praticar.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- DEPOIMENTO -->
+  <div class="container-fluid bg-1 text-center">
+    <h3 class="margin">Veja o que nossos alunos falam</h3>
+    <div class="row row-cols-1 row-cols-md-3">
+      <div class="col mb-4">
+        <div class="video-container">
+          <iframe width="100%" height="250px" src="https://www.youtube.com/embed/8jdX9YldjYw" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <h3 class="card-title">Tarcisio, 20</h3>
+      </div>
+      <div class="col mb-4">
+        <div class="video-container">
+          <iframe width="100%" height="250px" src="https://www.youtube.com/embed/8jdX9YldjYw" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <h3 class="card-title">Tarcisio, 18 anos</h3>
+      </div>
+      <div class="col mb-4">
+        <div class="video-container">
+          <iframe width="100%" height="250px" src="https://www.youtube.com/embed/QSrhq_4JgPE" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <h3 class="card-title">Tarcisio, 23 anos</h3>
+      </div>
+    </div>
+  </div>
+
+  <!-- BONUS -->
+  <div class="container-fluid bg-3 text-center ">
+    <h3 class="margin">Vamos dar a você + 3 bônus</h3>
+    <div class="row">
+      <div class="col-sm-4">
+        <h3> bonus!</h3><br>
+        <p>primeiro bonus</p>
+      </div>
+      <div class="col-sm-4">
+        <h3> bonus!</h3><br>
+        <p>segundo bonus </p>
+      </div>
+      <div class="col-sm-4">
+        <h3> bonus!</h3><br>
+        <p>terceiro bonus</p>
+      </div>
+    </div>
+  </div>
+  <!-- Como funciona o curso -->
+  <div class="container-fluid bg-1 text-center">
+    <div class="row row-cols-1 row-cols-md-2">
+      <div class="col mb-4">
+
+      </div>
+      <div class="col mb-4">
+      </div>
+    </div>
+
+  </div>
 
 
   <!------  OFERTA  ------>
-  <div class="container-fluid bg-3 text-center">
-    <h3>Comprando Hoje </h3>
-    <p id="demo"> </p>
+  <div class="container-fluid bg-2 text-center">
+    <h2 class="margin">Veja a super oferta que preprarei para você</h2>
+  
+
+  
+
     <div class="container">
       <div class="row">
         <div class="col-sm-12">
-          <s style="font-size: 65px;"> R$ 699,99</s><br>
-          <p>Por apenas
-            12x de 41,66</p>
-            <a class="btn button" style="color: white;" href="#" role="button">Sim, quero aprender inglês</a>
-            <div class="text-center">
-              <img src="./pagamento.png" class="img-fluid" alt="compra segura">
-            </div>     
+          <s style="font-size:35px;">DE R$ 700</s><br>
+          <p style="text-align: center; color: red; font-size: 25px;"> Por 12 x de R$ 45,83<br></p>
+          ou R$ 500 á vista
+          <div class="text-center">
+            <img src="./pagamento.png" class="img-fluid" alt="compra segura">
+          </div>
         </div>
-        
-      </div>
-      <!-- <div class="row">
-        <div class="col-sm">
 
-        </div>
-        <div class="col-sm">
-          <p> Está oferta termina em:<br>
-            <p id="demo"> </p><br>
-            
-        
-        </div>
-      </div> -->
+
+      </div>
+      <a href="#" class="btn btn-success btn-lg button" role="button" aria-pressed="true">Quero aprender inglês
+        agora</a>
+
     </div>
   </div>
-  
+
   <!-- 5 Container -->
-<div class="container-fluid bg-2 text-center">
-  <h3 class="margin">Sem risco para você</h3>
-  <div class="row">
-    <div class="col-sm-4">
-      <img src="./garantia.png" class="img-responsive img-circle margin" style="display:inline" alt="garantia"
-        width="300" height="300">
-    </div>
-    <div class="col-sm-6">
-      <h3> Satisfação garantida ou seu dinheiro de volta!!</h3><br>
-      <p>Você tem 30 dias de garantia caso não se sinta satisfeito com nosso curso. Basta nós enviar um
-        email dentro desse prazo que iremos devolver 100% do seu investimento.
-      </p>
+  <div class="container-fluid bg-2 text-center">
+    <div class="row">
+      <div class="col-sm-4">
+        <img src="./garantia.png" class="img-responsive img-circle margin" style="display:inline" alt="garantia"
+          width="300" height="300">
+      </div>
+      <div class="col-sm-6">
+        <h3> Satisfação garantida ou seu dinheiro de volta!!</h3><br>
+        <p>Acreditamos tanto em nosso método de ensino que damos a você a garantia incondicional de 30 dias. Caso não
+          sinta satisfeito com nosso curso basta entrar em contato que nós devolvemos todo seu dinheiro.
+        </p>
+      </div>
     </div>
   </div>
-</div>
 
 
-<!-- DEPOIMENTO -->
-<div class="container-fluid bg-4 text-center">
-  <h3 class="margin">O que nossos alunos falam?</h3>
-  <div class="row row-cols-1 row-cols-md-3">
-    <div class="col mb-4">
-      <div class="video-container">
-        <iframe width="100%" height="250px" src="https://www.youtube.com/embed/8jdX9YldjYw" frameborder="0"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
-      <h3 class="card-title">Tarcisio, 20</h3>
-    </div>
-    <div class="col mb-4">
-      <div class="video-container">
-        <iframe width="100%" height="250px" src="https://www.youtube.com/embed/8jdX9YldjYw" frameborder="0"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
-      <h3 class="card-title">Tarcisio, 18 anos</h3>
-    </div>
-    <div class="col mb-4">
-      <div class="video-container">
-        <iframe width="100%" height="250px" src="https://www.youtube.com/embed/QSrhq_4JgPE" frameborder="0"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
-      <h3 class="card-title">Tarcisio, 23 anos</h3>
-    </div>
-  </div>
-</div>
 
-
- 
-
-  
 
   <!-- Second Container -->
-  <div class="container-fluid bg-3 text-center" >
+  <div class="container-fluid bg-3 text-center">
     <h3 class="margin">Dúvidas frequentes</h3>
     <button class="accordion">Como receberei meu curso?</button>
     <div class="panel">
@@ -338,17 +411,15 @@
 
   <!-- Footer -->
   <footer class="container-fluid bg-2 text-center">
-    <p>Fluentiza<br>
-      Copyright 2019. Todos os direitos reservados.<br>
-      <u>
-        <a  type="button" data-toggle="modal" data-target="#exampleModalScrollable">
-          Política de privacidade
-        </a>
-      </u>
-    </p>
+    Fluentiza<br>
+    Copyright 2019. Todos os direitos reservados.<br>
+    <a type="button" data-toggle="modal" data-target="#exampleModalScrollable">
+      Política de privacidade
+    </a>
+
   </footer>
 
-  <!-- Modal -->
+  <!-- Modal Politica de privacidade -->
   <div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog"
     aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
     <div class="modal-dialog modal-dialog-scrollable" role="document">
@@ -395,6 +466,7 @@
       });
     }
 
+  
 
     //countdown
     // Set the date we're counting down to
